@@ -17,9 +17,9 @@ git clone https://github.com/stevanovickristina19/cnn-lab-api.git
 
 Make virtual environment and install requirements
 ```bash 
-cd cnn-lab-api \
-python3 -m venv cnnlab \
-source cnnlab/bin/activate \
+cd cnn-lab-api && \
+python3 -m venv cnnlab && \
+source cnnlab/bin/activate && \
 pip3 install requirements.txt
 ```
 
