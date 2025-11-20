@@ -25,11 +25,12 @@ pip3 install requirements.txt
 
 ## Prepare dataset
 ```bash
-
-wget https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz \
-tar -xvzf flower_photos.tgz \
-rm flower_photos.tgz
-
+mkdir -p data && \
+wget -O data/flower_photos.tgz https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz && \
+tar -xvzf data/flower_photos.tgz -C data && \
+mv data/flower_photos data/flowers && \
+rm data/flower_photos.tgz
+```
 
 ## Run the server
 
