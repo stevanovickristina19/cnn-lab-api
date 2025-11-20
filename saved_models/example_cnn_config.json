@@ -1,0 +1,1 @@
+{"model_name": "example_cnn", "input_size": [128, 128], "num_classes": 5, "num_conv_layers": 3, "filters_per_layer": [32, 64, 128], "kernel_size": 3, "fc_units": [128], "activation": "relu"}
