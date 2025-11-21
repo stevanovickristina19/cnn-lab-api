@@ -8,7 +8,7 @@ import io, base64, os, json
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# Default Fashion-MNIST labels (used if no custom dataset labels)
+
 DEFAULT_CLASS_NAMES = ["daisy", "dandelion", "rose", "sunflower", "tulip"]
 
 def load_model_config(model_name):

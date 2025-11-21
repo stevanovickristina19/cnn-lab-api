@@ -106,20 +106,5 @@ def get_model(config, num_classes=None):
             input_size=config.input_size  
         )
 
-    # Handle string case (legacy)
-    elif isinstance(config, str):
-        name = config.lower()
-        if name == "example_cnn":
-            return CNN_Small(num_classes=num_classes or 5)
-        else:
-            return CustomCNN(
-                num_conv_layers=3,
-                filters_per_layer=[16, 32, 64],
-                kernel_size=3,
-                fc_units=[128],
-                num_classes=num_classes or 5,
-                activation="relu"
-            )
-
     else:
         raise TypeError("get_model() expects a ModelConfig object or a string name.")

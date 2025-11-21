@@ -13,7 +13,7 @@ current_model = {}
 
 
 def save_model_config(config: ModelConfig):
-    """Save model configuration for persistence."""
+    """Save model configuration."""
     config_path = os.path.join(CONFIG_DIR, f"{config.model_name}_config.json")
     with open(config_path, "w") as f:
         json.dump(config.dict(), f)

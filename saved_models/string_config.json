@@ -1,0 +1,1 @@
+{"model_name": "string", "input_size": [128, 128], "num_classes": 5, "num_conv_layers": 3, "filters_per_layer": [8, 9, 512], "kernel_size": 3, "fc_units": [16], "activation": "relu"}
